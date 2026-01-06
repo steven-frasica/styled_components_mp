@@ -1,5 +1,7 @@
 body {
     font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #f9fafc;
     text-align: center;
     padding: 50px;
@@ -8,15 +10,18 @@ body {
 .plan {
     background-color: white;
     width: 280px;
-    margin: 0 auto;
+    max-width: 300px;
+    margin: 15px;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    transition: background-color 0.4s ease;
 }
 
 .plan:hover {
     transform: translateY(-4px);
+    background-color: #87CEEB;
 }
 
 .plan--highlighted {
